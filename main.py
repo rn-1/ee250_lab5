@@ -67,7 +67,7 @@ def main():
 
         # TODO: calculate the mean and standard deviation of the signal strengths you collected at this location
         signal_strength_mean = sum(signal_strengths) / len(signal_strengths)
-        signal_strength_std = stdv()
+        signal_strength_std = np.std(signal_strengths)
 
         # Question 6: What is the standard deviation? Why is it useful to calculate it?
         data.append((location, signal_strength_mean, signal_strength_std))
