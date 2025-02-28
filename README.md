@@ -56,3 +56,20 @@ Building materials
 Electronic interference
 Physical obstacles
 Router placement
+
+# Part 2
+
+1. How does distance affect TCP and UDP throughput?
+   TCP and UDP throughput decrease with distance, but TCP degrades more gradually while UDP drops sharply without packet recovery.
+
+2. At what distance does significant packet loss occur for UDP? based on plot
+   Significant UDP packet loss typically begins at 8 meters from the Pi.
+
+3. Why does UDP experience more packet loss than TCP?
+   UDP experiences more packet loss than TCP because it lacks reliability like acknowledgments and retransmissions.
+
+4. What happens if we increase the UDP bandwidth (-b 100M)?
+   Increasing UDP bandwidth to 100M leads to higher packet loss, potentially resulting in decreased actual throughput.
+
+5. Would performance be different on 5 GHz Wi-Fi vs. 2.4 GHz?
+   5 GHz offers higher throughput, less interference, and shorter range. 2.4 GHz provides better ranges but lower maximum throughput.
